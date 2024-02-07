@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('post_id');
             $table->unsignedBigInteger('attachment_id');
-            $table->primary(['post_id', 'attachment_id']);
-            $table->foreign('post_id')->references('id')->on('posts');
-            $table->foreign('attachment_id')->references('id')->on('attachments');
+            // $table->primary(['post_id', 'attachment_id']);
+            // $table->foreign('post_id')->references('id')->on('posts');
+            // $table->foreign('attachment_id')->references('id')->on('attachments');
             $table->timestamps();
         });
     }
