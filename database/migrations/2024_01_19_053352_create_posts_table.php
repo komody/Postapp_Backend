@@ -18,8 +18,8 @@ return new class extends Migration
             $table->integer('like_count');
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('attachment_id')->nullable();
-            $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('attachment_id')->references('id')->on('attachments');
+            // $table->foreign('user_id')->references('id')->on('users');
+            // $table->foreign('attachment_id')->references('id')->on('attachments');
             $table->timestamps();
         });
     }

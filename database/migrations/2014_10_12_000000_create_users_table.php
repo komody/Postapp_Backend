@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('introduction');
             $table->unsignedBigInteger('icon_attachment_id')->nullable();
-            $table->foreign('icon_attachment_id')->references('id')->on('attachments');
+            // $table->foreign('attachment_id')->references('id')->on('attachments');
             $table->dateTime('deleted_at')->nullable();
             $table->rememberToken();
             $table->timestamps();

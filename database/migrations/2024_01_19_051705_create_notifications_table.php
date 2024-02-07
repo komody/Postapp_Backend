@@ -16,8 +16,8 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id');
             $table->integer('type')->comment('1: 返信, 2: いいね, 3: フォロー');
             $table->unsignedBigInteger('notified_by');
-            $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('notified_by')->references('id')->on('users');
+            // $table->foreign('user_id')->references('id')->on('users');
+            // $table->foreign('notified_by')->references('id')->on('users');
             $table->timestamps();
         });
     }
